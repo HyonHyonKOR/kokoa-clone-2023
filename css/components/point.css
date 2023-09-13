@@ -1,0 +1,9 @@
+.point__dot{
+    background-color: tomato;
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    left: 100%;
+    bottom:100%;
+    position: absolute;
+  }
