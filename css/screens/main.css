@@ -1,0 +1,17 @@
+.main-screen-header{
+    padding: 30px 50px;
+}
+.gamelist{
+    margin: 30px 0px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.gamelist__block {
+ display: flex;
+ justify-content: space-around;
+ width: 100%;
+ margin: 30px 0px;
+}
+.gamelist__block img{
+ width: 40%;
+}

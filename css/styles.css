@@ -14,17 +14,21 @@
 @import "components/alt-screen-header.css";
 @import "components/no-mobile.css";
 
+
 /* Screens */
 @import "screens/login.css";
+@import "screens/main.css";
 @import "screens/friends.css";
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
 
+
 body {
-  color: #2e363e;
+  color: whitesmoke;
   font-family: "Open Sans", sans-serif;
+  background-color: #121315;
 }
 
 .main-screen {

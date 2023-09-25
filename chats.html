@@ -4,91 +4,89 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>Chats</title>
   </head>
-  <body>
+  <body id="friend">
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span>KT</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
         <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
+    <header class="screen-header friend-header">
+      <h1 class="screen-header__title">채팅</h1>
       <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="far fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span>
-          <a href="settings.html">
-            <i class="fas fa-cog fa-lg"></i>
-          </a>
-          <div class="point__dot"></div>
-        </span>
+        <a href="settings.html">
+          <div class="screen-header__icon">
+            <i class="fas fa-cog"></i>
+          </div>
+        </a>
       </div>
     </header>
 
-    <main class="main-screen">
+    <main class="friends-screen chats-screen">
       <a href="chat.html">
-        <div class="user-component">
+        <div class="user-component friend-component">
           <div class="user-component__column">
             <img
-              src="https://media.bunjang.co.kr/product/181595630_1_1646927577_w360.jpg"
-              class="user-component__avatar user-component__avatar--xl"
+              src="https://static.wikia.nocookie.net/arkhamcity/images/f/ff/Tumblr_nrbx7b0od91rbxbg8o1_1280.jpg/revision/latest?cb=20150713071450"
+              class="user-component__avatar .user-component__avatar--sm"
             />
-            <div class="user-component__text">
-              <h4 class="user-component__title">五条 悟</h4>
+            <div class="user-component__text friend-component-text">
+              <h4 class="user-component__title">JokerLover</h4>
+              <h6 class="user-component__subtitle">why so serious?</h6>
+            </div>
+          </div>
+          <div class="user-component__column chats-time">
+            <span>2023/09/26</span>
+          </div>
+        </div>
+        <div class="user-component friend-component">
+          <div class="user-component__column">
+            <img
+              src="https://images.pushsquare.com/9b7c3409dbb71/marvels-spider-man-remastered-cover.cover_large.jpg"
+              class="user-component__avatar .user-component__avatar--sm"
+            />
+            <div class="user-component__text friend-component-text">
+              <h4 class="user-component__title">SpiderGUY</h4>
               <h6 class="user-component__subtitle">
-                大丈夫。僕、最強だから&#X1F604;&#X270C;
+                your friendly neighborhood!
               </h6>
             </div>
           </div>
-          <div class="user-component__column">
-            <span class="user-component__time">21:22</span>
-            <div class="badge">1</div>
+          <div class="user-component__column chats-time">
+            <span>2023/09/21</span>
           </div>
         </div>
       </a>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="fas fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-            <div class="nav__dot"></div>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div id="no-mobile">
-      <span>Your screen is too big</span>
+    <div class="main-screen-header friend-divider">
+      <i class="fa-solid fa-comments fa-lg"></i>
+      <a href="main.html"> <i class="fa-solid fa-chevron-up fa-2x"></i> </a>
+      <div class="screen-header__icons">
+        <a href="friends.html">
+          <span>
+            <i class="fa-solid fa-users fa-xl"></i>
+            <div class="point__dot"></div>
+          </span>
+        </a>
+      </div>
     </div>
+
+    <div id="no-mobile">
+      <span
+        >If you wanna enjoy, make it smaller<i
+          class="fa-solid fa-down-left-and-up-right-to-center"
+        ></i
+      ></span>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/459e14b80c.js"
       crossorigin="anonymous"

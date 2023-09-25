@@ -1,32 +1,101 @@
-#friends-display-link {
-  text-align: center;
-  display: block;
-  background-color: #fafafa;
-  padding: 15px 0px;
-  font-size: 18px;
-  margin-bottom: 15px;
-  margin-top: -15px;
+#friend{
+  background-color: #1C1E1E;
 }
-
-#friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
+.screen-header__icon{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.screen-header__icon i{
+ color: #1C1E1E;
+ font-size: 20px;
+}
+.friend-header{
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+.friends-display{
+  margin-left: 25px;
+  width: 30%;
+  height:40px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.friends-display button{
+  border:none;
+  width:48%;
+  height: 90%;
+  border-radius: 30px;
+  background-color: #6867677f;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 14px;
+}
+.friends-display button:first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.friend-count{
+  width:20px;
+  height:20px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  font-size: 1px;
+  justify-content: center;
+  align-items: center;
+}
+.friends-display button:last-child{
+  background-color: black;
+}
+.friend-status{
+  margin:0 0 25px 30px;
+  font-weight: 600;
+} 
 .friends-screen {
   padding: 0px var(--horizontal-space);
 }
-
-.friends-screen__channel {
-  margin-top: 25px;
-  border-top: var(--main-border);
-  padding-top: 15px;
+.friend-component{
+  margin-bottom: 25px;
 }
-
-.friends-screen__channel-header {
-  margin-bottom: 30px;
+.friend-component-text h6{
+  color: gray;
+}
+.friend-divider{
+  position: absolute;
+  width: 80%;
+  bottom: 50px;
+  margin-top:60px;
+  padding: 0px 50px;
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+.friend-divider i{
+  transition:all 0.5s linear;
+ }
+.friend-divider i:hover{
+ color : #00FFFD;
+}
+.chats-screen h4{
+  font-size: 17px;
+}
+.chats-screen h6{
+  font-size: 14px;
+}
+.chats-time span{
+  color:#00FFFD;
+  font-size: 10px;
 }
 
 @keyframes hideSplashScreen{
@@ -40,7 +109,7 @@
 }
 
 #splash-screen{
-  background-color: var(--yellow);
+  background:linear-gradient(90deg, #0B1D64, #295DC1);
   position: absolute;
   height: 100vh;
   width: 100vw;

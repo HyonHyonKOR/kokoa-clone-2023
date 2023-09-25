@@ -3,9 +3,10 @@
 }
 .more-screen .icon-row{
     margin-top: 35px;
+    padding: 0 25px;
 }
 .more-suggestions{
-  margin-top:50px;
+  margin-top:20px;
   border-top: var(--main-border);
   padding-top:40px;
 }
@@ -24,7 +25,7 @@
 .more-suggestions__icon-image{
     width: 60px;
     height: 60px;
-    background-color: var(--yellow);
+    background-color: #00ffff96;
     border-radius: 10px;
     display: flex;
     justify-content: center;

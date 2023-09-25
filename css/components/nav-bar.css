@@ -2,10 +2,17 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 100px;
   background-color: #f9f9fa;
   padding: 20px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  transition: all 0.7s ease-in-out;
+}
+.nav:hover{
+  background-color: rgba(255,255,255,0.4);
 }
 .nav__list {
   display: flex;
@@ -14,35 +21,13 @@
 .nav__link {
   position: relative;
   color: #2e363e;
+  transition: all 0.5s ease-in-out;
+}
+.nav__link:hover{
+  color: #00FFFD;
 }
 
-@keyframes notificationAnimation{
-  0%{
-    transform: none;
-  }
-  50%{
-    transform: translateY(-5px) rotateY(360deg);
-  }
-  100%{
-    transform: none;
-  }
-}
 
-.nav__notification {
-  position: absolute;
-  left: 20px;
-  bottom: 15px;
-  animation:notificationAnimation 2s ease-in-out infinite;
-}
-.nav__dot{
-  background-color: tomato;
-  width:5px;
-  height:5px;
-  border-radius: 50%;
-  left: 100%;
-  bottom:100%;
-  position: absolute;
-}
 @keyframes appearBtnAnimation{
   from{
     opacity: 0;
@@ -63,6 +48,20 @@
 .nav__btn:nth-child(3){
   animation-delay: 0.5s;
 }
-.nav__btn:last-child{
-  animation-delay: 0.8s;
+
+.gamepad{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  bottom:0;
+  justify-content: center;
+  align-items: flex-end;
+}
+.gamepad div{
+  width: 40%;
+  height:20px;
+  background-color: black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }

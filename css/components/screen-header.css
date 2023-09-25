@@ -4,6 +4,9 @@
   align-items: center;
   padding: var(--horizontal-space);
   margin-bottom: 15px;
+  background-color: #2a2a2a;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 .screen-header__title {
   font-size: 32px;
